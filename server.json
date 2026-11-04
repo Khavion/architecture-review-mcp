@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.khavion/architecture-review-mcp",
+  "title": "Khavion Architecture Review",
+  "description": "Cited cloud best practices and a rules-based review of Terraform, CloudFormation, and Kubernetes.",
+  "version": "0.1.1",
+  "websiteUrl": "https://khavion.com/tools/mcp",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@khavion/architecture-review-mcp",
+      "version": "0.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "KHAVION_API_KEY",
+          "description": "Optional. A free Khavion work-email API key (https://khavion.com/tools/api-key). Without it, reviews show the top 3 findings.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/Khavion/architecture-review-mcp",
+    "source": "github",
+    "id": "1445010288"
+  }
+}

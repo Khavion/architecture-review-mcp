@@ -1,0 +1,43 @@
+{
+  "name": "@khavion/architecture-review-mcp",
+  "version": "0.1.1",
+  "description": "MCP server for cited cloud architecture review: cloud-provider best practices with verbatim quotes, and a rules-based review of Terraform, CloudFormation, and Kubernetes files. No AI model is called.",
+  "mcpName": "com.khavion/architecture-review-mcp",
+  "license": "MIT",
+  "author": "Khavion LLC",
+  "homepage": "https://khavion.com/tools/mcp",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "architecture-review",
+    "well-architected",
+    "terraform",
+    "cloudformation",
+    "kubernetes",
+    "aws",
+    "azure",
+    "gcp",
+    "citations"
+  ],
+  "bin": {
+    "architecture-review-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khavion/architecture-review-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Khavion/architecture-review-mcp/issues"
+  }
+}
